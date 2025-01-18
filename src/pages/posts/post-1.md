@@ -1,11 +1,12 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Time'
+pubDate: 2025-18-1
 author: 'ulas'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["time", "investing", "goals"]
-
 ---
 
 ## Selling vs Investing Time
@@ -14,7 +15,6 @@ As of today on any given regular weekday I sell 1 hour of my time for 24€ pre 
 
 # My First Blog Post
 
-Published on: 2022-07-01
 
 Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
 

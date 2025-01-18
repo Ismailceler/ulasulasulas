@@ -1,8 +1,7 @@
 ---
-import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
-import '../styles/global.css'
-const pageTitle = "About Me"
+import BaseLayout from "../layouts/BaseLayout.astro"
+const pageTitle = "Ulaş - About";
+const titleSize = "3em";
 const identity = {
     firstName: "ulas",
     country: "Germany",
@@ -19,35 +18,21 @@ const skillColor = "navy";
 const fontWeight = "bold";
 const textCase = "uppercase";
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-        <style define:vars={{skillColor, fontWeight, textCase}}>
-            .skill {
-              color: var(--skillColor);
-              font-weight: var(--fontWeight);
-              text-transform: var(--textCase);
-            }
-          </style>
-	</head>
-	<body>
-        <Navigation />
-		<h1>ulasulasulas - {pageTitle}</h1>
-        <p>Hey, I am {identity.firstName} a {identity.occupation} from {identity.country}</p>
-        <p>Here is what I can do:</p>
-        <ul>
-            {skills.map((skill) => <li class="skill">{skill}</li>)}
-        </ul>
-        {happy && <p>I am happy to be learning Astro!</p>}
+<BaseLayout titleSize={titleSize} pageTitle={pageTitle}>
+<style define:vars={{skillColor, fontWeight, textCase}}>
+.skill {
+color: var(--skillColor);
+font-weight: var(--fontWeight);
+text-transform: var(--textCase);
+}
+</style>
+<p>Hey, I am {identity.firstName} a {identity.occupation} from {identity.country}</p>
+<p>Here is what I can do:</p>
+<ul>{skills.map((skill) => <li class="skill">{skill}</li>)}</ul>
+{happy && <p>I am happy to be learning Astro!</p>}
 
 {finished && <p>I finished this tutorial!</p>}
 
-{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
-	</body>
-    <Footer />
-</html>
+{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}                                                                                                                                                                                                                                                                                                                                                                                                                          
+</BaseLayout>
+	

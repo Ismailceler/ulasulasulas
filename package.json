@@ -9,6 +9,10 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/rss": "^4.0.11",
+    "@fontsource-variable/dancing-script": "^5.1.1",
+    "@fontsource-variable/open-sans": "^5.1.1",
+    "@fontsource-variable/vollkorn": "^5.1.2",
     "astro": "^5.1.7"
   }
 }

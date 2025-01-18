@@ -1,0 +1,18 @@
+---
+import Navigation from "./Navigation.astro"
+import '@fontsource-variable/vollkorn';
+const { fontSize, fullPageTitle } = Astro.props;
+---
+<header>
+<nav>
+    <Navigation />
+</nav>
+<h1 style=`font-size: ${fontSize}`>{fullPageTitle}</h1>
+
+</header>
+
+<style>
+    h1 {
+        font-family: 'Vollkorn Variable', serif;
+    }
+</style>
