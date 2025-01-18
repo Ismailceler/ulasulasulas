@@ -1,12 +1,12 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Time'
-pubDate: 2025-18-1
-author: 'ulas'
+title: Time
+author: ulas
+description: "Selling vs Investing!"
 image:
-    url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'The Astro logo on a dark background with a pink glow.'
-tags: ["time", "investing", "goals"]
+    url: "https://docs.astro.build/assets/arc.webp"
+    alt: "The Astro logo on a dark background with a purple gradient arc."
+pubDate: 2025-07-08
+tags: ["astro", "blogging", "learning in public", "successes"]
 ---
 
 ## Selling vs Investing Time
