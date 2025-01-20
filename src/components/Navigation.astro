@@ -1,6 +1,47 @@
 ---
+import Social from "./Social.astro"
+const name = "Ulaş"
 ---
+<div class="container"> 
+    <div class="div1">
 <a href="/">Home</a>
 <a href="/about/">About</a>
 <a href="/blog/">Blog</a>
 <a href="/tags/">Tags</a>
+</div>
+<div class="div-remaining"></div> 
+<div class="div2">
+    &copy; 2025 {name}
+<Social platform="twitter" username="astrodotbuild" />
+<Social platform="github" username="withastro" />
+<Social platform="youtube" username="astrodotbuild" />
+
+	</div> 
+</div> 
+<style>
+.container { 
+	display: flex; 
+} 
+ 
+.div1, .div2 { 
+	width: fit-content; 
+} 
+ 
+.div-remaining { 
+	flex: 1; 
+    text-justify: center;
+} 
+
+a {
+    color: #218521;
+    text-decoration: none;
+
+  }
+
+  a:visited {
+    color: #218521;
+  }
+
+
+
+</style> 

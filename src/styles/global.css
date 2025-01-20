@@ -4,13 +4,13 @@ html {
     color: #777777
   }
   
-  body {
+  /* body {
     margin: 0 auto;
     width: 100%;
     max-width: 80ch;
     padding: 1rem;
     line-height: 1.5;
-  }
+  } */
   
   * {
     box-sizing: border-box;
@@ -19,15 +19,15 @@ html {
   h1 {
     margin: 1rem 0;
     font-size: 2.5rem;
-    color: #d94611;
+    color: #218521;
   }
 
   a {
-    color: #d94611;
+    color: #218521;
     text-decoration: none;
 
   }
 
   a:visited {
-    color: #cd4c1d;
+    color: #155715;
   }

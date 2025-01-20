@@ -1,8 +1,42 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro"
 const pageTitle = "Ulaş";
 const titleSize = "7em";
+import '@fontsource-variable/vollkorn';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 ---
-<BaseLayout titleSize={titleSize} pageTitle={pageTitle}>
-<h2>Test</h2>
-</BaseLayout>
+
+<html lang="en">
+    <head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+	</head>
+    <body>
+        <Navigation />
+<h1 style=`font-size: ${titleSize}`>{pageTitle}</h1>
+</body>
+</html>
+<style>
+    h1{
+        position: absolute; 
+        top: 30%; 
+        left: 50%; 
+        transform: translateX(-50%) translateY(-50%);
+        font-family: "Vollkorn Variable", Garamond, serif;  
+        color: #218521 
+    }
+
+    a {
+        text-decoration: none;
+        color: #ff0000
+    }
+
+    body {
+    padding:0;
+    margin:0;
+
+    }
+</style>
